@@ -256,7 +256,7 @@ export class ɵNgSelectMultipleOption implements OnDestroy {
    * For objects, use the `ngValue` input binding.
    */
   @Input('value')
-  set value(value: any) {
+  set value(value: string) {
     if (this._select) {
       this._value = value;
       this._setElementValue(_buildValueString(this.id, value));
